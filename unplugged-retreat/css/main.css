@@ -96,6 +96,7 @@ textarea {
     font-family: 'Open Sans' , sans-serif;
     font-size: 1em;
     text-align: left;
+    color: #e2e3ed;
 
   }
 
@@ -139,7 +140,6 @@ address {
   font-style: normal;
 
 }
- 
 .content-wrapper {
   width: 90%;
   margin: 50px 0;
@@ -147,6 +147,7 @@ address {
    /*-------- Base Header-Footer Styles --------*/
 header,
 footer {
+  background-color: #202322;
   display:flex;
   justify-content: center;
   align-items: center;
@@ -165,15 +166,18 @@ header .content-wrapper {
 }
 
 .header-divider{
-  width: 100;
+  background: #3a3a3a;
+  width: 100%;
   height: 1px;
   margin: 10px 0 20px 0;
 }
 
 header nav {
   width: 60%;
+  font-size: 1.125em;
+  font-weight: 700;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   flex-flow: row wrap;
   width 60%;
@@ -186,7 +190,13 @@ header nav ul {
 
 }
 
+header nav ul li {
+font-size:1.125em;
+
+}
+
 footer {
+  text-align: center;
   flex-direction: column;
 }
 
@@ -233,10 +243,36 @@ footer .copyright {
 /* Aside */
 
 aside {
+  background-color: #527158;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+}
+aside .form {
+  margin-top: 30px;
+}
+
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+  padding: 1em;
+}
+
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
 }
 /* Features */
 .features {
@@ -263,18 +299,21 @@ aside {
 }
 
 .features p {
+  text-align: center;
   margin: 0;
 }
 
 /* Reviews */
 
 .reviews {
+  background-color: #2a423a;
   display:flex;
   justify-content: center;
   flex-flow:row wrap;
 }
 .reviews h2 {
   margin-bottom: 40px;
+  line-height: 1;
 }
 
 .reviews h3 {
